@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Food Ordering System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #f1f7ff);
+      color: #333;
+    }
+
+    header {
+      background-color: #4A90E2;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 30px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .feature {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    .feature img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover img {
+      transform: rotate(360deg);
+    }
+
+    .order-btn {
+      margin: 30px auto;
+      display: block;
+      background-color: #4A90E2;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .order-btn:hover {
+      background-color: #357ABD;
+    }
+
+    footer {
+      background-color: #4A90E2;
+      text-align: center;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Campus Food Ordering System</h1>
+    <p>Fast • Easy • Contactless</p>
+  </header>
+
+  <div class="features">
+    <div class="feature">
+      <img src="https://img.icons8.com/color/96/food.png" alt="Browse Food">
+      <h3>Browse Food</h3>
+      <p>View menus from all campus vendors in real time.</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://img.icons8.com/color/96/shopping-cart.png" alt="Order Online">
+      <h3>Order Online</h3>
+      <p>Add to cart, customize items, and pay instantly.</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://img.icons8.com/color/96/delivery.png" alt="Track Delivery">
+      <h3>Track Orders</h3>
+      <p>Know exactly when your order is ready for pickup or delivery.</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://img.icons8.com/color/96/feedback.png" alt="Give Feedback">
+      <h3>Give Feedback</h3>
+      <p>Rate your food and vendors directly in the app.</p>
+    </div>
+  </div>
+
+  <button class="order-btn" onclick="orderNow()">Place an Order</button>
+
+  <footer>
+    &copy; 2025 Campus Food System • All rights reserved
+  </footer>
+
+  <script>
+    function orderNow() {
+      alert("Redirecting to Order Page...");
+      window.location.href = "#"; // Change to order page link
+    }
+  </script>
+
+</body>
+</html>
